@@ -178,6 +178,10 @@ hr.small {
 .service-item {
     margin-bottom: 30px;
 }
+/* Class for moving button to center */
+.button{
+margin-left: 450px;
+}
 /* Class for text color above buttons h3*/
 h3{
 color: darkorange;
