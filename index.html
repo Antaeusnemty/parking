@@ -20,6 +20,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMmDIz5_A9ufisNsshgwUTA2SKE6i-ZXo&callback=initMap"></script>
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +45,7 @@
       }
 
       #button .top {
-        background-color: #DDD;  /* The button background */
+        background-color: #E69400;  /* The button background */
       }
 
       #button ul li.item {
@@ -104,8 +106,7 @@
             <!-- /.row -->
         </div>
         <!-- /.container -->
-    </section>
-
+    </section>                                  
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
@@ -132,15 +133,6 @@
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-<div id="button" class="button">
-      <ul>
-        <li class="top">Select Area</li>
-        <li class="item"><a href="">Park Downtown</a></li>
-        <li class="item"><a href="">Park Midtown</a></li>
-        <li class="item"><a href="">Park University</a></li>
-      </ul>
-    </div>
-                   
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -158,20 +150,35 @@
                     <a href="#contact" class="btn btn-lg btn-light">Find Parking!</a>
                     <a href="#contact" class="btn btn-lg btn-dark">Report Parking!</a>
                 </div>
-            </div>
+                <!-- inserting select menu -->
+           </div>
+           <div id="button" class="button">
+      <ul>
+        <li class="top">--Select Area--</li>
+        <li class="item"><a href="#contact">Park Downtown</a></li>
+        <li class="item"><a href="#contact">Park Midtown</a></li>
+        <li class="item"><a href="#contact">Park University</a></li>
+      </ul>
+    </div>
         </div>
     </aside>
 
     <!-- Map      add  Google maps here--> 
-    <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Wholly BBQ Cafe and Beer Garden,+SW+2nd+Ave,+Gainesville,+FL,&amp;aq=0&amp;oq=twitter&amp;sll=29.650633,-82.326792&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+
+    <section id="contact" class="map"> 
+       <div id="map" style="width:500px;height:380px;">  
+                         why no map!!!!!!!!!
+                          
+   </div>
+<!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Wholly BBQ Cafe and Beer Garden,+SW+2nd+Ave,+Gainesville,+FL,&amp;aq=0&amp;oq=twitter&amp;sll=29.650633,-82.326792&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
         <small>
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Wholly BBQ Cafe and Beer Garden,+SW+2nd+Ave,+Gainesville,+FL,&amp;aq=0&amp;oq=twitter&amp;sll=29.650633,-82.326792&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
         </small>
-        </iframe>
+</iframe> -->
     </section>
 
+                              
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -209,6 +216,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/map.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
