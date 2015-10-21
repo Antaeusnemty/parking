@@ -21,6 +21,9 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMmDIz5_A9ufisNsshgwUTA2SKE6i-ZXo&callback=initMap"></script>
+    <script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -166,10 +169,42 @@
     <!-- Map      add  Google maps here--> 
 
     <section id="contact" class="map"> 
-       <div id="map" style="width:500px;height:380px;">  
+       <div id="map" style="width:950px;height:380px;">  
                          why no map!!!!!!!!!
                           
    </div>
+   <script>
+       var myCenter=new google.maps.LatLng(29.650793, -82.326780);
+       
+   function initialize(){
+   var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+};
+  
+</script> 
+<button onclick="getLocation()">Report Parking!</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;	
+}
+</script>      
 <!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Wholly BBQ Cafe and Beer Garden,+SW+2nd+Ave,+Gainesville,+FL,&amp;aq=0&amp;oq=twitter&amp;sll=29.650633,-82.326792&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
         <small>
