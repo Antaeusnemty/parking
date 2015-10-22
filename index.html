@@ -24,7 +24,7 @@
     <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
-    
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,7 +32,7 @@ src="http://maps.googleapis.com/maps/api/js">
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
     <style type="text/css">
       #button {  /* Box in the button */
         display: block;
@@ -53,7 +53,7 @@ src="http://maps.googleapis.com/maps/api/js">
 
       #button ul li.item {
         display: none;  /* By default, do not display the items (which contains the links) */
-      }  
+      }
 
       #button ul:hover .item {  /* When the user hovers over the button (or any of the links) */
         display: block;
@@ -109,7 +109,7 @@ src="http://maps.googleapis.com/maps/api/js">
             <!-- /.row -->
         </div>
         <!-- /.container -->
-    </section>                                  
+    </section>
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
@@ -166,26 +166,25 @@ src="http://maps.googleapis.com/maps/api/js">
         </div>
     </aside>
 
-    <!-- Map      add  Google maps here--> 
+    <!-- Map      add  Google maps here-->
 
-    <section id="contact" class="map"> 
-       <div id="map" style="width:950px;height:380px;">  
+    <section id="contact" class="map">
+       <div id="map" style="width:950px;height:380px;">
                          why no map!!!!!!!!!
-                          
+
    </div>
    <script>
        var myCenter=new google.maps.LatLng(29.650793, -82.326780);
-       
+
    function initialize(){
    var marker = new google.maps.Marker({
   position:myCenter,
-  icon: "pinkball.png"
   });
 
 marker.setMap(map);
 };
-  
-</script> 
+
+</script>
 <button onclick="getLocation()">Report Parking!</button> <!-- button for geolocation -->
 
 <p id="demo"></p>
@@ -196,16 +195,16 @@ var x = document.getElementById("demo");
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
-    } else { 
+    } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
 
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;	
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
 }
-</script>      
+</script>
 <!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Wholly BBQ Cafe and Beer Garden,+SW+2nd+Ave,+Gainesville,+FL,&amp;aq=0&amp;oq=twitter&amp;sll=29.650633,-82.326792&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
         <small>
@@ -214,7 +213,7 @@ function showPosition(position) {
 </iframe> -->
     </section>
 
-                              
+
     <!-- Footer -->
     <footer>
         <div class="container">
