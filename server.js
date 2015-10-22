@@ -1,12 +1,12 @@
-var express = require("express"); 
+var express = require("express");
 var server = express();
 
+server.use(express.static(__dirname+""));
 
-//express.createServer(function(req, res) {
+server.get("/", function(req, res){
+  res.sendFile("index.html");
 
-//    var url = url.
-// });
-
-//server.use (express.static(__dirname/+"index.html"));
-
-server.get(demo)
+});
+server.listen(3030, function(){
+    console.log("Now listening on port 3030");
+});

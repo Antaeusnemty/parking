@@ -179,13 +179,14 @@ src="http://maps.googleapis.com/maps/api/js">
    function initialize(){
    var marker = new google.maps.Marker({
   position:myCenter,
+  icon: "pinkball.png"
   });
 
 marker.setMap(map);
 };
   
 </script> 
-<button onclick="getLocation()">Report Parking!</button>
+<button onclick="getLocation()">Report Parking!</button> <!-- button for geolocation -->
 
 <p id="demo"></p>
 
