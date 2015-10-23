@@ -10,7 +10,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 var marker=new google.maps.Marker({
   position:myCenter,
   });
-    
+
 var mapProp = {
   center:myCenter,
   zoom:5,
