@@ -21,10 +21,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMmDIz5_A9ufisNsshgwUTA2SKE6i-ZXo&callback=initMap"></script>
-    <script
-src="http://maps.googleapis.com/maps/api/js">
-</script>
-
+   
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -185,12 +182,12 @@ marker.setMap(map);
 };
 
 </script>
-<button onclick="getLocation()">Report Parking!</button> <!-- button for geolocation -->
+<button class="btn btn-lg btn-dark" onclick="getLocation()">Report Parking!</button> <!-- button for geolocation -->
 
-<p id="demo"></p>
+
 
 <script>
-var x = document.getElementById("demo");
+
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -219,26 +216,14 @@ function showPosition(position) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Stranger Danger Do Not Click Links</strong>
+                    <h4><strong>Thanks for using Gator Parking!</strong>
                     </h4>
                     <p>Florida<br>Gainesville</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> 1 (800) myParkingApp</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">myParkingApp@gmail.com</a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:myParkingApp@gmail.com">myParkingApp@gmail.com</a>
                         </li>
                     </ul>
                     <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
                     <hr class="small">
                     <p class="text-muted">this more possible text</p>
                 </div>
