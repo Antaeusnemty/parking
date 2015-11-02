@@ -21,7 +21,13 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMmDIz5_A9ufisNsshgwUTA2SKE6i-ZXo&callback=initMap"></script>
-   
+    <!-- links from mapking -->
+ <link rel="stylesheet" href="/css/style.css">
+ <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js'></script>
+ <script src='angular/angular.min.js'></script>
+ <script src='angular-simple-logger/dist/angular-simple-logger.min.js'></script>
+ <script src='angular-google.maps.js'></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -162,7 +168,18 @@
     </div>
         </div>
     </aside>
+<!-- mapking buttons -->
+   <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+        <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+        </ui-gmap-marker>
+   </ui-gmap-google-map>
 
+
+                <button ng-click="getLocation()">Report Parking Spot!</button> <!-- button for geolocation -->
+                <button ng-click="saveSpot()">Save Spot!</button>
+                <button ng-click="removeSpot(marker.coords.latitude, marker.coords.longitude)">Take Spot!</button>
+                <p>Latitude = {{marker.coords.latitude.toFixed(1)}}</p>
+                <p>Longitude = {{marker.coords.longitude.toFixed(1)}}</p>
     <!-- Map      add  Google maps here-->
 
     <section id="contact" class="map">
@@ -269,7 +286,7 @@ function showPosition(position) {
         });
     });
     </script>
-
+<script src="/map.js"></script>
 </body>
 
 </html>
