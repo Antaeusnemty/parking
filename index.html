@@ -5,7 +5,8 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name=viewport content='width=480'>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -85,7 +86,7 @@
                 <a href="#portfolio" onclick = $("#menu-close").click(); >Find Parking &amp; Report Parking!</a>
             </li>
             <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Parking Map</a>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Parking Map</a>
             </li>
         </ul>
     </nav>
@@ -125,16 +126,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Tried of parking trouble?</h2>
+                    <h2>Tired of parking trouble?</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-lg-10">
                             <div class="portfolio-item">
-                               <div class="container">
+
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="http://www.funcage.com/blog/wp-content/uploads/2011/10/11-funny-parking-gironome.jpg" alt="some stacked photos">
+                                    <img class="img-portfolio img-responsive center-block" src="http://www.funcage.com/blog/wp-content/uploads/2011/10/11-funny-parking-gironome.jpg" alt="some stacked photos">
                                 </a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -152,15 +153,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>Click on Find Parking! to search for available parking in Gainesville. Click on Report Parking! to map an avialable parking spot for others to find.</h3>
-                    <a href="#contact" class="btn btn-lg btn-light">Find Parking!</a>
-                    <a href="#contact" class="btn btn-lg btn-dark">Report Parking!</a>
+                    <h3>Click on "Report Parking!" & "Save Spot!" to map an avialable parking spot for others to find. Click on "Take Spot!" to park there and remove the marker.</h3>
+                    <a href="#" class="btn btn-lg btn-light">Back to the Top</a>
+
                 </div>
                 <!-- inserting select menu -->
            </div>
            <div id="button" class="button">
       <ul>
-        <li class="top">--Select Area--</li>
+        <li class="dropdown2" class="top">--Select Area--</li>
         <li class="item"><a href="#contact">Park Downtown</a></li>
         <li class="item"><a href="#contact">Park Midtown</a></li>
         <li class="item"><a href="#contact">Park University</a></li>
@@ -168,12 +169,7 @@
     </div>
         </div>
     </aside>
-<!-- mapking buttons -->
-                <button ng-click="getLocation()">Report Parking Spot!</button> <!-- button for geolocation -->
-                <button ng-click="saveSpot()">Save Spot!</button>
-                <button ng-click="removeSpot(marker.coords.latitude, marker.coords.longitude)">Take Spot!</button>
-                <p>Latitude = {{marker.coords.latitude.toFixed(1)}}</p>
-                <p>Longitude = {{marker.coords.longitude.toFixed(1)}}</p>
+
     <!-- Map      add  Google maps here-->
 
    <script>
@@ -215,7 +211,12 @@ function showPosition(position) {
         <small>
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Wholly BBQ Cafe and Beer Garden,+SW+2nd+Ave,+Gainesville,+FL,&amp;aq=0&amp;oq=twitter&amp;sll=29.650633,-82.326792&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
         </small>
-</iframe> -->
+</iframe> --><!-- mapking buttons -->
+                <button class="btn btn-lg btn-dark" ng-click="getLocation()">Report Parking Spot!</button> <!-- button for geolocation -->
+                <button class="btn btn-lg btn-dark" ng-click="saveSpot()">Save Spot!</button>
+                <button class="btn btn-lg btn-dark" ng-click="removeSpot(marker.coords.latitude, marker.coords.longitude)">Take Spot!</button>
+                <p>Latitude = {{marker.coords.latitude.toFixed(1)}}</p>
+                <p>Longitude = {{marker.coords.longitude.toFixed(1)}}</p>
     </section>
 
 
@@ -233,7 +234,7 @@ function showPosition(position) {
                     </ul>
                     <br>
                     <hr class="small">
-                    <p class="text-muted">this more possible text</p>
+                    <p class="text-muted"></p>
                 </div>
             </div>
         </div>
@@ -277,7 +278,7 @@ function showPosition(position) {
         });
     });
     </script>
-wp_footer();
+
 </body>
 
 </html>

@@ -216,7 +216,11 @@ color: blue;
 
 .portfolio-item {
     margin-bottom: 30px;
-    
+  
+
+    height: auto;
+    width: auto;
+
 }
 
 .img-portfolio {
