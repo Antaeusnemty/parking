@@ -8,8 +8,8 @@ Currently google maps takes time to find your location and delays my application
 
 ## Creator
 Alexander Tyler
-Gainesville Dev Academy Gradute 
-Santa Fe College Student
+*Gainesville Dev Academy Gradute 
+Santa Fe College Student*
 
 
 ## Copyright and License
