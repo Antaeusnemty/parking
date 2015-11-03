@@ -1,25 +1,16 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/)
+# Welcome to my Gator Parking READ.ME
 
-[Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) is a responsive, one page portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). The theme features multiple content sections with an off canvas navigation menu.
-
-## Getting Started
-
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+## About My App
+This app was created with the intention of helping out people looking for parking in downtown and other high traffic areas of Gainesville, Florida. As well as providing information related to parking like hours when you don't have to pay and information on when some spots become available like taxi only parking.
 
 ## Bugs and Issues
-
-Have a bug or an issue with this theme? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-stylish-portfolio/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/stylish-portfolio/).
+Currently google maps takes time to find your location and delays my application displaying of your lat&long and it takes a couple clicks of "Report Parking!" to get the marker to drop and display. 
 
 ## Creator
+Alexander Tyler
+*Gainesville Dev Academy Gradute 
+Santa Fe College Student*
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
 ## Copyright and License
 
