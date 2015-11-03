@@ -1,6 +1,6 @@
-# [Gator Parking]
+# Welcome to my Gator Parking READ.ME
 
-## Getting Started
+## About My App
 This app was created with the intention of helping out people looking for parking in downtown and other high traffic areas of Gainesville, Florida. As well as providing information related to parking like hours when you don't have to pay and information on when some spots become available like taxi only parking.
 
 ## Bugs and Issues
