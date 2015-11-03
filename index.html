@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 
 <head>
 
@@ -20,7 +20,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMmDIz5_A9ufisNsshgwUTA2SKE6i-ZXo&callback=initMap"></script>
+  <!--   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMmDIz5_A9ufisNsshgwUTA2SKE6i-ZXo&callback=initMap"></script> -->
     <!-- links from mapking -->
  <link rel="stylesheet" href="/css/style.css">
  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -65,7 +65,7 @@
       }
     </style>
 
-<body>
+<body ng-controller="myCtrl">
 
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -169,12 +169,6 @@
         </div>
     </aside>
 <!-- mapking buttons -->
-   <ui-gmap-google-map center='map.center' zoom='map.zoom'>
-        <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
-        </ui-gmap-marker>
-   </ui-gmap-google-map>
-
-
                 <button ng-click="getLocation()">Report Parking Spot!</button> <!-- button for geolocation -->
                 <button ng-click="saveSpot()">Save Spot!</button>
                 <button ng-click="removeSpot(marker.coords.latitude, marker.coords.longitude)">Take Spot!</button>
@@ -182,11 +176,6 @@
                 <p>Longitude = {{marker.coords.longitude.toFixed(1)}}</p>
     <!-- Map      add  Google maps here-->
 
-    <section id="contact" class="map">
-       <div id="map" style="width:950px;height:380px;">
-                         why no map!!!!!!!!!
-
-   </div>
    <script>
        var myCenter=new google.maps.LatLng(29.650793, -82.326780);
 
@@ -199,10 +188,6 @@ marker.setMap(map);
 };
 
 </script>
-<button class="btn btn-lg btn-dark" onclick="getLocation()">Report Parking!</button> <!-- button for geolocation -->
-
-
-
 <script>
 
 
@@ -219,6 +204,12 @@ function showPosition(position) {
     "<br>Longitude: " + position.coords.longitude;
 }
 </script>
+
+<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+     <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+     </ui-gmap-marker>
+</ui-gmap-google-map>
+
 <!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Wholly BBQ Cafe and Beer Garden,+SW+2nd+Ave,+Gainesville,+FL,&amp;aq=0&amp;oq=twitter&amp;sll=29.650633,-82.326792&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
         <small>
@@ -286,7 +277,7 @@ function showPosition(position) {
         });
     });
     </script>
-<script src="/map.js"></script>
+wp_footer();
 </body>
 
 </html>

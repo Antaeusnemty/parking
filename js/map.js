@@ -1,4 +1,3 @@
-
 angular.module('myApp', ['uiGmapgoogle-maps'])
     .config(function(uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
